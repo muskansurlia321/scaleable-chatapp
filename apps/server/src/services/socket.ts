@@ -25,7 +25,9 @@ class SocketService {
     this._io = new Server({
       cors: {
         allowedHeaders: ["*"],
-        origin: "https://scaleable-chatapp-web-19bk.vercel.app",
+        //origin: "https://scaleable-chatapp-web-19bk.vercel.app",
+        origin: "*",
+        methods: ["GET", "POST"],
       },
     });
 
